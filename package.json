@@ -1,0 +1,30 @@
+{
+  "name": "sign-playground-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "faucet": "node -r @swc-node/register src/faucet.ts",
+    "sign-message": "node -r @swc-node/register src/sign-message.ts",
+    "subscribe-events": "node -r @swc-node/register src/subscribe-events.ts",
+    "subscribe-transactions": "node -r @swc-node/register src/subscribe-transactions.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mysten/sui.js": "^0.54.1",
+    "@suiet/wallet-kit": "^0.2.24",
+    "dotenv": "^16.4.5",
+    "ws": "^8.17.0"
+  },
+  "devDependencies": {
+    "@mysten/bcs": "^0.11.1",
+    "@swc-node/register": "^1.9.1",
+    "@types/node": "^20.12.11",
+    "@types/ws": "^8.5.10",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
